@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package com.deliverytech.controllers;
+package com.deliverytech.controller;
 
 import java.time.LocalDateTime;
 import java.util.Map;
