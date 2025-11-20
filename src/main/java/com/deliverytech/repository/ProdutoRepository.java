@@ -1,22 +1,29 @@
-package com.deliverytech.repository;
-
-import java.util.List;
+package com.deliverytech.delivery_api.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
 
-import com.deliverytech.model.Produto;
+import com.deliverytech.delivery_api.entity.Produto;
 
-public interface ProdutoRepository extends JpaRepository<Produto, Long> {
+import java.math.BigDecimal;
+import java.util.List;
 
-    List<Produto> findByRestauranteId(Long restauranteId);
 
-    List<Produto> findByCategoriaIgnoreCase(String categoria);
+@Repository
+public interface ProdutoRepository extends JpaRepository <Produto, Long> {
+    // buscar produto por restaurante ID
+     List<Produto> findByRestauranteId(Long restauranteId);
 
+    // Apenas produtos disponíveis
     List<Produto> findByDisponivelTrue();
 
-    @Query("SELECT p FROM Produto p WHERE p.restaurante.id = :restauranteId AND p.disponivel = true")
-    List<Produto> findDisponiveisPorRestaurante(Long restauranteId);
+    // Produtos por categoria
+    List<Produto> findByCategoria(String categoria);
 
-    void save(com.deliverytech.entity.Produto produto);
+    // Por faixa de preço (menor ou igual)
+    List<Produto> findByPrecoLessThanEqual(BigDecimal preco);
+
+    // Buscar produto por nome
+    Produto findByNome(String nome);
+    
 }

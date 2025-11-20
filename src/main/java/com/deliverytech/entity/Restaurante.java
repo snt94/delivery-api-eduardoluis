@@ -1,13 +1,10 @@
-package com.deliverytech.entity;
+package com.deliverytech.delivery_api.entity;
 
 import java.math.BigDecimal;
+import java.util.List;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -29,6 +26,8 @@ public class Restaurante {
 
     private String endereco;
 
+    private String cep;
+
     private String telefone;
 
     @Column(name = "taxa_entrega")
@@ -38,7 +37,16 @@ public class Restaurante {
 
     private Boolean ativo;
 
-    public void inativar() {
-        this.ativo = false;
+    @OneToMany(mappedBy = "restaurante", fetch = FetchType.LAZY)
+    @JsonIgnore
+    private List<Produto> produtos;
+
+    @OneToMany(mappedBy = "restaurante", fetch = FetchType.LAZY)
+    @JsonIgnore
+    private List<Pedido> pedidos;
+
+    public boolean isAtivo() {
+        return this.ativo != null && this.ativo;
     }
+
 }

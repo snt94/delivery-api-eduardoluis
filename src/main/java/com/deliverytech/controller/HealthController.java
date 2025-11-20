@@ -1,9 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-
-package com.deliverytech.controller;
+package com.deliverytech.delivery_api.controller;
 
 import java.time.LocalDateTime;
 import java.util.Map;
@@ -11,10 +6,6 @@ import java.util.Map;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- *
- * @author eduardo
- */
 @RestController
 public class HealthController {
 
@@ -33,9 +24,9 @@ public class HealthController {
         return new AppInfo(
             "Delivery Tech API",
             "1.0.0",
-            "Eduardo Luís de Andrade Santos",
+            "[Seu Nome]",
             "JDK 21",
-            "Spring Boot 3.5.7"
+            "Spring Boot 3.2.x"
         );
     }
 
