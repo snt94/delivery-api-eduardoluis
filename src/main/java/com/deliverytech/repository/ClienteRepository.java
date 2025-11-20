@@ -16,4 +16,6 @@ public interface ClienteRepository extends JpaRepository<Cliente, Long> {
 
     @Query("SELECT c FROM Cliente c WHERE c.email = :email AND c.ativo = true")
     Optional<Cliente> findAtivoByEmail(String email);
+
+    void save(com.deliverytech.entity.Cliente cliente);
 }

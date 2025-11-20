@@ -17,4 +17,6 @@ public interface ProdutoRepository extends JpaRepository<Produto, Long> {
 
     @Query("SELECT p FROM Produto p WHERE p.restaurante.id = :restauranteId AND p.disponivel = true")
     List<Produto> findDisponiveisPorRestaurante(Long restauranteId);
+
+    void save(com.deliverytech.entity.Produto produto);
 }
