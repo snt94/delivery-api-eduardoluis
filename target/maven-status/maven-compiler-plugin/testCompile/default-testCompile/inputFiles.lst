@@ -1,1 +1,4 @@
-/home/eduardo/repos/delivery-api-eduardoluis/src/test/java/com/deliverytech/delivery/DeliveryApiApplicationTests.java
+/home/eduardo/repos/delivery-api-eduardoluis/src/test/java/com/deliverytech/ClienteRepositoryTest.java
+/home/eduardo/repos/delivery-api-eduardoluis/src/test/java/com/deliverytech/PedidoRepositoryTest.java
+/home/eduardo/repos/delivery-api-eduardoluis/src/test/java/com/deliverytech/ProdutoRepositoryTest.java
+/home/eduardo/repos/delivery-api-eduardoluis/src/test/java/com/deliverytech/RestauranteRepositoryTest.java
