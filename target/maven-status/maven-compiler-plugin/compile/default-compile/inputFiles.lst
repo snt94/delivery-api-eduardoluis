@@ -1,5 +1,9 @@
 /home/eduardo/repos/delivery-api-eduardoluis/src/main/java/com/deliverytech/DeliveryApiApplication.java
+/home/eduardo/repos/delivery-api-eduardoluis/src/main/java/com/deliverytech/controller/ClienteController.java
 /home/eduardo/repos/delivery-api-eduardoluis/src/main/java/com/deliverytech/controller/HealthController.java
+/home/eduardo/repos/delivery-api-eduardoluis/src/main/java/com/deliverytech/controller/PedidoController.java
+/home/eduardo/repos/delivery-api-eduardoluis/src/main/java/com/deliverytech/controller/ProdutoController.java
+/home/eduardo/repos/delivery-api-eduardoluis/src/main/java/com/deliverytech/controller/RestauranteController.java
 /home/eduardo/repos/delivery-api-eduardoluis/src/main/java/com/deliverytech/exception/BusinessException.java
 /home/eduardo/repos/delivery-api-eduardoluis/src/main/java/com/deliverytech/exception/ResourceNotFoundException.java
 /home/eduardo/repos/delivery-api-eduardoluis/src/main/java/com/deliverytech/model/Cliente.java

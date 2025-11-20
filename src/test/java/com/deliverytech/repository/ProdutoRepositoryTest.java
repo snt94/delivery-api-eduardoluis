@@ -1,4 +1,4 @@
-package com.deliverytech;
+package com.deliverytech.repository;
 
 import java.util.List;
 
@@ -9,8 +9,6 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 
 import com.deliverytech.model.Produto;
 import com.deliverytech.model.Restaurante;
-import com.deliverytech.repository.ProdutoRepository;
-import com.deliverytech.repository.RestauranteRepository;
 
 @DataJpaTest
 class ProdutoRepositoryTest {

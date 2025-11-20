@@ -1,4 +1,4 @@
-package com.deliverytech;
+package com.deliverytech.repository;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -11,9 +11,6 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import com.deliverytech.model.Cliente;
 import com.deliverytech.model.Pedido;
 import com.deliverytech.model.Restaurante;
-import com.deliverytech.repository.ClienteRepository;
-import com.deliverytech.repository.PedidoRepository;
-import com.deliverytech.repository.RestauranteRepository;
 
 @DataJpaTest
 class PedidoRepositoryTest {

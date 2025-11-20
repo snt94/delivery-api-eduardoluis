@@ -1,4 +1,4 @@
-package com.deliverytech;
+package com.deliverytech.repository;
 
 import java.util.Optional;
 
@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 
 import com.deliverytech.model.Cliente;
-import com.deliverytech.repository.ClienteRepository;
 
 @DataJpaTest
 class ClienteRepositoryTest {
