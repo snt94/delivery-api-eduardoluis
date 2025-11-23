@@ -1,8 +1,8 @@
-package com.deliverytech.delivery_api.dto.response;
-
-import io.swagger.v3.oas.annotations.media.Schema;
+package com.deliverytech.dto.response;
 
 import java.time.LocalDateTime;
+
+import io.swagger.v3.oas.annotations.media.Schema;
 
 @Schema(
     description = "Wrapper para encapsular respostas da API",

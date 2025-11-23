@@ -1,4 +1,4 @@
-package com.deliverytech.delivery_api.config;
+package com.deliverytech.config;
 
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;

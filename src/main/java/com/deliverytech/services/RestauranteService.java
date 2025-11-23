@@ -1,12 +1,12 @@
-package com.deliverytech.delivery_api.services;
+package com.deliverytech.services;
 
-
-import com.deliverytech.delivery_api.dto.request.RestauranteRequestDTO;
-import com.deliverytech.delivery_api.dto.response.RestauranteResponseDTO;
-import com.deliverytech.delivery_api.projection.RelatorioVendas;
 
 import java.math.BigDecimal;
 import java.util.List;
+
+import com.deliverytech.dto.request.RestauranteRequestDTO;
+import com.deliverytech.dto.response.RestauranteResponseDTO;
+import com.deliverytech.projection.RelatorioVendas;
 
 public interface RestauranteService {
 

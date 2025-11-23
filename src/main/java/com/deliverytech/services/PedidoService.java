@@ -1,12 +1,12 @@
-package com.deliverytech.delivery_api.services;
+package com.deliverytech.services;
 
 import java.math.BigDecimal;
 import java.util.List;
 
-import com.deliverytech.delivery_api.dto.request.ItemPedidoRequestDTO;
-import com.deliverytech.delivery_api.dto.request.PedidoRequestDTO;
-import com.deliverytech.delivery_api.dto.response.PedidoResponseDTO;
-import com.deliverytech.delivery_api.enums.StatusPedido;
+import com.deliverytech.dto.request.ItemPedidoRequestDTO;
+import com.deliverytech.dto.request.PedidoRequestDTO;
+import com.deliverytech.dto.response.PedidoResponseDTO;
+import com.deliverytech.enums.StatusPedido;
 
 
 

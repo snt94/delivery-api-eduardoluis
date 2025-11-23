@@ -1,4 +1,6 @@
-package com.deliverytech.delivery_api.dto.request;
+package com.deliverytech.dto.request;
+
+import java.math.BigDecimal;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotNull;
@@ -7,8 +9,6 @@ import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.math.BigDecimal;
 
 @Data
 @AllArgsConstructor

@@ -1,4 +1,4 @@
-package com.deliverytech.delivery_api.validation;
+package com.deliverytech.validation;
 
 import java.util.regex.Pattern;
 import jakarta.validation.ConstraintValidator;

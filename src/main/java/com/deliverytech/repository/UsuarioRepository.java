@@ -1,9 +1,10 @@
-package com.deliverytech.delivery_api.repository;
-
-import com.deliverytech.delivery_api.entity.Usuario;
-import org.springframework.data.jpa.repository.JpaRepository;
+package com.deliverytech.repository;
 
 import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.deliverytech.entity.Usuario;
 
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
 

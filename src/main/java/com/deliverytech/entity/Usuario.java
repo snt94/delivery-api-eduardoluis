@@ -1,6 +1,6 @@
-package com.deliverytech.delivery_api.entity;
+package com.deliverytech.entity;
 
-import com.deliverytech.delivery_api.enums.Role;
+import com.deliverytech.enums.Role;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

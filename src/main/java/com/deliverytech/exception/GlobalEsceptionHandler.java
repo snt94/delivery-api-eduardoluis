@@ -1,4 +1,7 @@
-package com.deliverytech.delivery_api.exception;
+package com.deliverytech.exception;
+
+import java.util.HashMap;
+import java.util.Map;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -8,10 +11,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 
-import com.deliverytech.delivery_api.dto.response.ErrorResponseDTO;
-
-import java.util.HashMap;
-import java.util.Map;
+import com.deliverytech.dto.response.ErrorResponseDTO;
 
 @ControllerAdvice
 public class GlobalEsceptionHandler {

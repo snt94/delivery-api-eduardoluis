@@ -1,4 +1,4 @@
-package com.deliverytech.delivery_api.security;
+package com.deliverytech.security;
 
 import io.jsonwebtoken.ExpiredJwtException;
 import jakarta.servlet.FilterChain;

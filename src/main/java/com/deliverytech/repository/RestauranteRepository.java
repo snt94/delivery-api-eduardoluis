@@ -1,16 +1,15 @@
-package com.deliverytech.delivery_api.repository;
+package com.deliverytech.repository;
 
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Optional;
 
-import com.deliverytech.delivery_api.projection.RelatorioVendas;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-
-import com.deliverytech.delivery_api.entity.Restaurante;
+import com.deliverytech.entity.Restaurante;
+import com.deliverytech.projection.RelatorioVendas;
 
 @Repository
 public interface RestauranteRepository extends JpaRepository <Restaurante, Long>{

@@ -1,18 +1,18 @@
-package com.deliverytech.delivery_api.services.impl;
+package com.deliverytech.services.impl;
 
 import java.util.List;
 
-import com.deliverytech.delivery_api.entity.Cliente;
-import com.deliverytech.delivery_api.exception.BusinessException;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.deliverytech.delivery_api.dto.request.ClienteRequestDTO;
-import com.deliverytech.delivery_api.dto.response.ClienteResponseDTO;
-import com.deliverytech.delivery_api.repository.ClienteRepository;
-import com.deliverytech.delivery_api.services.ClienteService;
+import com.deliverytech.dto.request.ClienteRequestDTO;
+import com.deliverytech.dto.response.ClienteResponseDTO;
+import com.deliverytech.entity.Cliente;
+import com.deliverytech.exception.BusinessException;
+import com.deliverytech.repository.ClienteRepository;
+import com.deliverytech.services.ClienteService;
 
 @Service
 @Transactional

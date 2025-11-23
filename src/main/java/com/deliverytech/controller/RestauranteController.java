@@ -1,9 +1,9 @@
-package com.deliverytech.delivery_api.controller;
+package com.deliverytech.controller;
 
-import com.deliverytech.delivery_api.dto.request.RestauranteRequestDTO;
-import com.deliverytech.delivery_api.dto.response.ApiResponseWrapper;
-import com.deliverytech.delivery_api.dto.response.RestauranteResponseDTO;
-import com.deliverytech.delivery_api.projection.RelatorioVendas;
+import com.deliverytech.dto.request.RestauranteRequestDTO;
+import com.deliverytech.dto.response.ApiResponseWrapper;
+import com.deliverytech.dto.response.RestauranteResponseDTO;
+import com.deliverytech.projection.RelatorioVendas;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
@@ -16,7 +16,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.deliverytech.delivery_api.services.RestauranteService;
+import com.deliverytech.services.RestauranteService;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

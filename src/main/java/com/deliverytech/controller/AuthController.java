@@ -1,10 +1,10 @@
-package com.deliverytech.delivery_api.controller;
+package com.deliverytech.controller;
 
-import com.deliverytech.delivery_api.dto.request.LoginRequestDTO;
-import com.deliverytech.delivery_api.dto.request.UsuarioRequestDTO;
-import com.deliverytech.delivery_api.dto.response.LoginResposeDTO;
-import com.deliverytech.delivery_api.dto.response.UsuarioResponseDTO;
-import com.deliverytech.delivery_api.services.UsuarioService;
+import com.deliverytech.dto.request.LoginRequestDTO;
+import com.deliverytech.dto.request.UsuarioRequestDTO;
+import com.deliverytech.dto.response.LoginResposeDTO;
+import com.deliverytech.dto.response.UsuarioResponseDTO;
+import com.deliverytech.services.UsuarioService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

@@ -1,6 +1,6 @@
-package com.deliverytech.delivery_api.controller;
-import com.deliverytech.delivery_api.dto.request.ProdutoRequestDTO;
-import com.deliverytech.delivery_api.dto.response.ProdutoResponseDTO;
+package com.deliverytech.controller;
+import com.deliverytech.dto.request.ProdutoRequestDTO;
+import com.deliverytech.dto.response.ProdutoResponseDTO;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
@@ -10,7 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.deliverytech.delivery_api.services.ProdutoService;
+import com.deliverytech.services.ProdutoService;
 
 import java.math.BigDecimal;
 import java.util.List;

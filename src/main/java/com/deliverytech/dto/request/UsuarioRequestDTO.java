@@ -1,6 +1,6 @@
-package com.deliverytech.delivery_api.dto.request;
+package com.deliverytech.dto.request;
 
-import com.deliverytech.delivery_api.enums.Role;
+import com.deliverytech.enums.Role;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

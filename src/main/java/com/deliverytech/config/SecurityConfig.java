@@ -1,6 +1,6 @@
-package com.deliverytech.delivery_api.config;
+package com.deliverytech.config;
 
-import com.deliverytech.delivery_api.security.JwtAuthenticationFilter;
+import com.deliverytech.security.JwtAuthenticationFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

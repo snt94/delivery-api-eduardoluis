@@ -1,9 +1,10 @@
-package com.deliverytech.delivery_api.dto.response;
-
-import io.swagger.v3.oas.annotations.media.Schema;
-import org.springframework.data.domain.Page;
+package com.deliverytech.dto.response;
 
 import java.util.List;
+
+import org.springframework.data.domain.Page;
+
+import io.swagger.v3.oas.annotations.media.Schema;
 
 @Schema(
     description = "Wrapper para encapsular respostas de paginação da API",

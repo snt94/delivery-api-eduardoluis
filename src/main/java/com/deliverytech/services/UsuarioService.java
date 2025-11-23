@@ -1,10 +1,10 @@
-package com.deliverytech.delivery_api.services;
+package com.deliverytech.services;
 
 
-import com.deliverytech.delivery_api.dto.request.LoginRequestDTO;
-import com.deliverytech.delivery_api.dto.request.UsuarioRequestDTO;
-import com.deliverytech.delivery_api.dto.response.LoginResposeDTO;
-import com.deliverytech.delivery_api.dto.response.UsuarioResponseDTO;
+import com.deliverytech.dto.request.LoginRequestDTO;
+import com.deliverytech.dto.request.UsuarioRequestDTO;
+import com.deliverytech.dto.response.LoginResposeDTO;
+import com.deliverytech.dto.response.UsuarioResponseDTO;
 
 public interface UsuarioService {
 

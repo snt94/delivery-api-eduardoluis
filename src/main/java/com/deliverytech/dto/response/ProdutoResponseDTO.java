@@ -1,7 +1,8 @@
-package com.deliverytech.delivery_api.dto.response;
+package com.deliverytech.dto.response;
+
+import java.math.BigDecimal;
 
 import lombok.Data;
-import java.math.BigDecimal;
 
 @Data
 public class ProdutoResponseDTO {

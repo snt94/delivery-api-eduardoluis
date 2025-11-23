@@ -1,10 +1,10 @@
-package com.deliverytech.delivery_api.controller;
+package com.deliverytech.controller;
 import java.math.BigDecimal;
 import java.util.List;
 
-import com.deliverytech.delivery_api.dto.request.ItemPedidoRequestDTO;
-import com.deliverytech.delivery_api.dto.request.PedidoRequestDTO;
-import com.deliverytech.delivery_api.dto.response.PedidoResponseDTO;
+import com.deliverytech.dto.request.ItemPedidoRequestDTO;
+import com.deliverytech.dto.request.PedidoRequestDTO;
+import com.deliverytech.dto.response.PedidoResponseDTO;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
@@ -14,8 +14,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.deliverytech.delivery_api.enums.StatusPedido;
-import com.deliverytech.delivery_api.services.PedidoService;
+import com.deliverytech.enums.StatusPedido;
+import com.deliverytech.services.PedidoService;
 
 @RestController
 @RequestMapping("/pedidos")

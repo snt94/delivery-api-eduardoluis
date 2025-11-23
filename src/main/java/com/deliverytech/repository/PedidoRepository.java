@@ -1,4 +1,4 @@
-package com.deliverytech.delivery_api.repository;
+package com.deliverytech.repository;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -6,8 +6,8 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.deliverytech.delivery_api.entity.Pedido;
-import com.deliverytech.delivery_api.enums.StatusPedido;
+import com.deliverytech.entity.Pedido;
+import com.deliverytech.enums.StatusPedido;
 
 @Repository
 public interface PedidoRepository extends JpaRepository <Pedido, Long> {

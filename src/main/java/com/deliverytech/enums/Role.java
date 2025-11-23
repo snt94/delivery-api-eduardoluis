@@ -1,4 +1,4 @@
-package com.deliverytech.delivery_api.enums;
+package com.deliverytech.enums;
 
 public enum Role {
     ADMIN("ADMIN"),

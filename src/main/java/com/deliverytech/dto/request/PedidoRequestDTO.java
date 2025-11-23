@@ -1,6 +1,6 @@
-package com.deliverytech.delivery_api.dto.request;
+package com.deliverytech.dto.request;
 
-import com.deliverytech.delivery_api.validation.ValidCEP;
+import com.deliverytech.validation.ValidCEP;
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;

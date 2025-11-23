@@ -1,11 +1,11 @@
-package com.deliverytech.delivery_api.services;
+package com.deliverytech.services;
 
-
-import com.deliverytech.delivery_api.dto.request.ProdutoRequestDTO;
-import com.deliverytech.delivery_api.dto.response.ProdutoResponseDTO;
 
 import java.math.BigDecimal;
 import java.util.List;
+
+import com.deliverytech.dto.request.ProdutoRequestDTO;
+import com.deliverytech.dto.response.ProdutoResponseDTO;
 
 public interface ProdutoService {
 

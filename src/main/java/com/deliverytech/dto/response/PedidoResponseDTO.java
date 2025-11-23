@@ -1,12 +1,12 @@
-package com.deliverytech.delivery_api.dto.response;
+package com.deliverytech.dto.response;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
 
-import com.deliverytech.delivery_api.dto.request.ItemPedidoRequestDTO;
-import com.deliverytech.delivery_api.entity.Cliente;
-import com.deliverytech.delivery_api.entity.Restaurante;
+import com.deliverytech.dto.request.ItemPedidoRequestDTO;
+import com.deliverytech.entity.Cliente;
+import com.deliverytech.entity.Restaurante;
 import lombok.Data;
 
 @Data

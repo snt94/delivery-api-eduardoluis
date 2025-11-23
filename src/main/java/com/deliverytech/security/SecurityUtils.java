@@ -1,9 +1,10 @@
-package com.deliverytech.delivery_api.security;
+package com.deliverytech.security;
 
-import com.deliverytech.delivery_api.entity.Usuario;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
+
+import com.deliverytech.entity.Usuario;
 
 public class SecurityUtils {
 

@@ -1,4 +1,4 @@
-package com.deliverytech.delivery_api.exception;
+package com.deliverytech.exception;
 
 public class BusinessException extends RuntimeException {
       private String errorCode;
