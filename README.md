@@ -34,4 +34,4 @@ Sistema de delivery desenvolvido com Spring Boot e Java 21.
 
 ## 👨‍💻 Desenvolvedor
 Eduardo Luís de Andrade Santos - Arquitetura de Sistemas API REST Full com Java Spring Boot
-Desenvolvido com JDK 21 e Spring Boot 3.5.7
+Desenvolvido com JDK 21 e Spring Boot 3.5.8
