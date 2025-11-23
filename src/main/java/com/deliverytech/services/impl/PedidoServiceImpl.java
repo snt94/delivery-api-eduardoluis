@@ -5,9 +5,6 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.deliverytech.entity.*;
-import com.deliverytech.exception.BusinessException;
-import com.deliverytech.exception.EntityNotFoundException;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,7 +13,14 @@ import org.springframework.transaction.annotation.Transactional;
 import com.deliverytech.dto.request.ItemPedidoRequestDTO;
 import com.deliverytech.dto.request.PedidoRequestDTO;
 import com.deliverytech.dto.response.PedidoResponseDTO;
+import com.deliverytech.entity.Cliente;
+import com.deliverytech.entity.ItemPedido;
+import com.deliverytech.entity.Pedido;
+import com.deliverytech.entity.Produto;
+import com.deliverytech.entity.Restaurante;
 import com.deliverytech.enums.StatusPedido;
+import com.deliverytech.exception.BusinessException;
+import com.deliverytech.exception.EntityNotFoundException;
 import com.deliverytech.repository.ClienteRepository;
 import com.deliverytech.repository.PedidoRepository;
 import com.deliverytech.repository.ProdutoRepository;
@@ -194,18 +198,13 @@ public class PedidoServiceImpl implements PedidoService {
 
     private boolean isTransicaoValida(StatusPedido statusAtual, StatusPedido novoStatus) {
         // Implementar lógica de transições válidas
-        switch (statusAtual) {
-            case PENDENTE:
-                return novoStatus == StatusPedido.CONFIRMADO || novoStatus == StatusPedido.CANCELADO;
-            case CONFIRMADO:
-                return novoStatus == StatusPedido.PREPARANDO || novoStatus == StatusPedido.CANCELADO;
-            case PREPARANDO:
-                return novoStatus == StatusPedido.SAIU_PARA_ENTREGA;
-            case SAIU_PARA_ENTREGA:
-                return novoStatus == StatusPedido.ENTREGUE;
-            default:
-                return false;
-        }
+        return switch (statusAtual) {
+            case PENDENTE -> novoStatus == StatusPedido.CONFIRMADO || novoStatus == StatusPedido.CANCELADO;
+            case CONFIRMADO -> novoStatus == StatusPedido.PREPARANDO || novoStatus == StatusPedido.CANCELADO;
+            case PREPARANDO -> novoStatus == StatusPedido.SAIU_PARA_ENTREGA;
+            case SAIU_PARA_ENTREGA -> novoStatus == StatusPedido.ENTREGUE;
+            default -> false;
+        };
     }
 
     private boolean podeSerCancelado(StatusPedido status) {

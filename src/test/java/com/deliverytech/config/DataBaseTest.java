@@ -1,7 +1,11 @@
 package com.deliverytech.config;
 
 
-import com.deliverytech.controller.TestDataConfiguration;
+import java.sql.Connection;
+
+import javax.sql.DataSource;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,10 +15,7 @@ import org.springframework.context.annotation.Import;
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.ActiveProfiles;
 
-import javax.sql.DataSource;
-import java.sql.Connection;
-
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import com.deliverytech.controller.TestDataConfiguration;
 
 @SpringBootTest
 @AutoConfigureMockMvc

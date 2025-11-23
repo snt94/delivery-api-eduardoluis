@@ -1,15 +1,16 @@
 package com.deliverytech.controller;
 
 
-import com.deliverytech.entity.Cliente;
-import com.deliverytech.entity.Produto;
-import com.deliverytech.repository.ClienteRepository;
-import com.deliverytech.repository.ProdutoRepository;
+import java.math.BigDecimal;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.test.context.event.annotation.BeforeTestMethod;
 
-import java.math.BigDecimal;
+import com.deliverytech.entity.Cliente;
+import com.deliverytech.entity.Produto;
+import com.deliverytech.repository.ClienteRepository;
+import com.deliverytech.repository.ProdutoRepository;
 
 @TestConfiguration
 public class TestDataConfiguration {

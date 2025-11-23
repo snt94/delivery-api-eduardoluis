@@ -1,9 +1,0 @@
-/home/eduardo/repos/delivery-api-eduardoluis/src/test/java/com/deliverytech/DeliveryApiApplicationTests.java
-/home/eduardo/repos/delivery-api-eduardoluis/src/test/java/com/deliverytech/config/DataBaseTest.java
-/home/eduardo/repos/delivery-api-eduardoluis/src/test/java/com/deliverytech/controller/TestDataConfiguration.java
-/home/eduardo/repos/delivery-api-eduardoluis/src/test/java/com/deliverytech/repository/ClienteRepositoryTest.java
-/home/eduardo/repos/delivery-api-eduardoluis/src/test/java/com/deliverytech/repository/PedidoRepositoryTest.java
-/home/eduardo/repos/delivery-api-eduardoluis/src/test/java/com/deliverytech/repository/ProdutoRepositoryTest.java
-/home/eduardo/repos/delivery-api-eduardoluis/src/test/java/com/deliverytech/repository/RestauranteRepositoryTest.java
-/home/eduardo/repos/delivery-api-eduardoluis/src/test/java/com/deliverytech/service/impl/ClienteServiceImplTest.java
-/home/eduardo/repos/delivery-api-eduardoluis/src/test/java/com/deliverytech/swagger/SwaggerIntegrationTest.java
